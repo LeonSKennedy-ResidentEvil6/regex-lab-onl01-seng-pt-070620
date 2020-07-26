@@ -39,5 +39,5 @@ end
 # returns false for invalid phone numbers, regardless of formatting
 
 def valid_phone_number?(phone)
-  phone.
+  phone.scan
 end
