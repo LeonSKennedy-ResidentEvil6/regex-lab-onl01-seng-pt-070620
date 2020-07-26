@@ -39,5 +39,9 @@ end
 # returns false for invalid phone numbers, regardless of formatting
 
 def valid_phone_number?(phone)
-  if phone.scan(/(\d+)-(\d+)-(\d+)/)
+  if phone.scan(/(\d+)-(\d+)-(\d+)/) == nil
+    return false 
+  else 
+    return true
+  end 
 end
